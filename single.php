@@ -25,14 +25,16 @@
                             </ul>
                             <div class="clearfix"></div>
                         </div><!--post-head-->
-                        <?php the_excerpt(); ?>
+                        <?php the_content(); ?>
                     </article>
                     <div class="comments">
                         <br/><br/>
                         <?php comments_template(); ?>
                     </div><!--comments-->
                 <?php endwhile; else : ?>
-                    <h4>No se encontraron articulos</h4>
+                    <article class="blog-post">
+                        <p><em>No se encontraron articulos</em></p>
+                    </article>
                 <?php endif; ?>
             </div><!--col-->
         </div><!--row-->

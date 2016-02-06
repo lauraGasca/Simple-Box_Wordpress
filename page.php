@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-    <!--===========blog===========-->
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -14,20 +13,10 @@
                             <?php the_post_thumbnail();?>
                         </figure>
                         <div class="post-head">
-                            <div class="date-stamp">
-                                <span class="date"><?php echo get_the_date('d'); ?></span>
-                                <span class="month"><?php echo get_the_date('M'); ?></span>
-                            </div><!--date-->
-                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <ul>
-                                <li><span>Por:</span> <?php echo get_the_author(); ?> </li>
-                                <li><span>Fecha:</span> <?php echo get_the_date(); ?></li>
-                                <li><span>Comentarios:</span> <?php comments_number(); ?> </li>
-                            </ul>
+                            <h3><?php the_title(); ?></h3>
                             <div class="clearfix"></div>
                         </div><!--post-head-->
-                        <?php the_excerpt(); ?>
-                        <a href="<?php the_permalink(); ?>" class="read-more">Leer Más</a>
+                        <?php the_content(); ?>
                     </article>
                 <?php endwhile; else : ?>
                     <article class="blog-post">
