@@ -1,0 +1,182 @@
+/*
+Theme Name: Blog Intic
+Theme URI: http://elnahual.com.mx
+Author: El Nahual
+Author URI: http://elnahual.com.mx
+Description: Tema desarrollado para el blog de InTic
+Version: 1.0
+*/
+
+.comments #comments {
+    margin-bottom: 40px;
+}
+h3#comments {
+    line-height: 24px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: lato;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #697989;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+h3#comments:after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #697989 transparent transparent transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -10px;
+}
+ol.commentlist{
+    list-style-type: none;
+    padding: 0;
+}
+
+#respond h3 {
+    color: #5AACE9;
+    font-size: 30px;
+    font-family: lato;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+#commentform, #searchform{
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #5AACE9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    margin-top: 26px;
+    margin-bottom: 48px;
+}
+
+#commentform #author, #commentform #email, #commentform #url,#searchform #s {
+    height: 40px;
+    margin-bottom: 14px;
+    width: 100%;
+    background: #76BDF2;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    padding-left: 20px;
+}
+
+#commentform #comment {
+    height: 110px;
+    padding-top: 15px;
+    margin-bottom: 22px;
+    width: 100%;
+    background: #76BDF2;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    padding-left: 20px;
+}
+
+#commentform p {
+    margin: 25px 0 10px;
+    color: #fff;
+}
+
+#searchform label {
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+#commentform #submit, #searchform #searchsubmit{
+    width: 198px;
+    height: 48px;
+    background: #fff;
+    background: rgba(255,255,255,0.2);
+    font-size: 15px;
+    font-family: open sans;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #76BDF2;
+    margin-top: 8px;
+}
+
+#searchform #searchsubmit {
+    height: 35px;
+    width: 122px;
+    line-height: 35px;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#commentform label {
+    top: -78px;
+}
+
+.widget ul {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 20px;
+    font-family: 'Open Sans', 'sans-serif';
+    background: #465568;
+    color: #a0b3c4;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.widget li {
+    display: block;
+    font-size: 14px;
+    font-weight: open sans;
+    position: relative;
+    line-height: 30px;
+}
+
+.widget ul li:before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    margin-top: -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 12px 0 0;
+    border-color: #76BDF2 transparent transparent transparent;
+}
+
+.widget ul li a {
+    color: #A0B3C4;
+}
+
+.widget ul li a:hover {
+    color: #76BDF2;
+}
+
+.widget .tagcloud a {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    color: #A0B3C4;
+    border: 2px solid #5AACE9;
+    padding: 3px 12px;
+}
+
+.widget .tagcloud a:hover {
+    background: #5AACE9;
+    color: #fff;
+}
